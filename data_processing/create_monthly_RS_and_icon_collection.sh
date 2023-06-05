@@ -7,12 +7,14 @@
 #                2021.08.01 TK, changed to 11 UTC selection for icon
 #
 
-# On hegoa
-cd /work/tkiszler/data/
+# On local work station
+cd /work/
 
 # Data bases:
-ICON_LEM_BASEDIR=/data/inscape/icon/experiments/nyalesund/testbed/
-RS_BASEDIR=/data/radiosondes/raw/01004_ny-alesund/
+# model data
+ICON_LEM_BASEDIR=/data/
+# awipev radiosonde data
+RS_BASEDIR=/data/
 
 YEAR="2020" #                      |
 MONTH="12"  # 
