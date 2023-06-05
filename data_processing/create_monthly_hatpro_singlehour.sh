@@ -4,11 +4,11 @@
 #
 # Modifications: 2021.03.24 TK, Copied from entire file merging set. 
 
-# On cierzo or hegoa
-cd /work/tkiszler/data/
+# On local work station
+cd /work/
 
 # Data bases:
-HATPRO_BASEDIR=/data/obs/site/nya/nyhat/l2/
+HATPRO_BASEDIR=/data/
 
 YEAR="2020" #
 MONTH="12"  # 
@@ -24,8 +24,8 @@ do
   HATPRO_FILES=${HATPRO_BASEDIR}${YEAR}/${MONTH}/${d}
   LWP_HATPRO=${HATPRO_FILES}/sups_nya_mwr00_l2_clwvi_*
   IWV_HATPRO=${HATPRO_FILES}/sups_nya_mwr00_l2_prw_*
-  # Bernhards flags for hatpro
-  SPEC_FLAG_FILE=/data/obs/site/nya/nyhat/tbx_ret/data/${YEAR}/${MONTH}/${YEAR}${MONTH}${d}_tbx_ret_nyhat.nc
+  # B. P. flags for hatpro (this is locally processed at UzK IGMK)
+  SPEC_FLAG_FILE=/data/${YEAR}/${MONTH}/${YEAR}${MONTH}${d}_tbx_ret_nyhat.nc
  
   if [ ! -f ${ICON_2km_FILE} ]
   then
