@@ -11,14 +11,18 @@
 #                2021.03.24 TK, Change parsival accum rain to accum precipitation
 #
 
-# On cierzo
-cd /work/tkiszler/data/
+# On local work station
+cd /work
 
 # Data bases:
-HATPRO_BASEDIR=/data/obs/site/nya/nyhat/l2/
-PARSIVEL_BASEDIR=/data/obs/site/nya/parsivel/l1/
-CL51_BASEDIR=/data/obs/site/nya/cl51/l1/
-ICON_LEM_BASEDIR=/data/inscape/icon/experiments/nyalesund/testbed/
+# hatpro data
+HATPRO_BASEDIR=/data
+# parsivel precip data
+PARSIVEL_BASEDIR=/data
+# ceilometer data
+CL51_BASEDIR=/data/
+# ICON LEM model data
+ICON_LEM_BASEDIR=/data/
 
 YEAR="2020" #                      |
 MONTH="09"  # 
