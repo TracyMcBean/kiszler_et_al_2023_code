@@ -12,11 +12,13 @@
 #                2021.07.09 TK, Changed to only precipitation selection
 
 # On cierzo or hegoa
-cd /work/tkiszler/data/
+cd /work/
 
 # Data bases:
-PARSIVEL_BASEDIR=/data/obs/site/nya/parsivel/l1/
-ICON_LEM_BASEDIR=/data/inscape/icon/experiments/nyalesund/testbed/
+# parsivel precip data
+PARSIVEL_BASEDIR=/data/
+# model data
+ICON_LEM_BASEDIR=/data/
 
 YEAR="2020" #
 MONTH="12"  # 
