@@ -5,7 +5,7 @@
 # 19.02.2021, TK
 # Modifications: 04.08.2021, TK: Adapted for model (ICON-LEM) output
 
-cd /work/tkiszler/data/
+cd /work/
 
 YEAR=2020
 MONTHS=( "08" "09" "10" "11" "12" )
