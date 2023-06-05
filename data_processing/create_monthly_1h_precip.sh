@@ -11,11 +11,12 @@
 #                2021.05.04 TK, save both 600m and 2km data in same nc out file
 #                2021.05.07 TK, Adapted september as some meteograms are messed up
 # On cierzo and hegoa
-cd /work/tkiszler/data/precip/
+cd /work/
 
 # Data bases:
-ICON_LEM_BASEDIR=/data/inscape/icon/experiments/nyalesund/testbed/
-PLUVIO_BASEDIR=/data/obs/site/nya/pluvio/l1/
+ICON_LEM_BASEDIR=/data/
+# obs data base
+PLUVIO_BASEDIR=/data/
 
 YEAR="2020" #                      |
 MONTH="12"  # 
@@ -65,11 +66,11 @@ do
     cdo hoursum tmp_icon_lem_selday.nc tmp_icon_lem_hoursum.nc
   
     # Fill dummy file
-    python /home/tkiszler/projects/E03/icon_lem_nyalesund/data_postprocessing/compute_1h_precip.py ${ICON_FILE} "tmp_icon_hoursum.nc"
+    python /compute_1h_precip.py ${ICON_FILE} "tmp_icon_hoursum.nc"
     
     cdo chname,RAIN_GSP,accum_rain_nwp,RAIN_CON,accum_precip_nwp,SNOW_GSP,accum_snow_nwp tmp_icon_hoursum.nc tmp_renamed_icon.nc
     
-    python /home/tkiszler/projects/E03/icon_lem_nyalesund/data_postprocessing/compute_1h_precip.py ${ICON_LEM_FILE} "tmp_icon_lem_hoursum.nc"
+    python /compute_1h_precip.py ${ICON_LEM_FILE} "tmp_icon_lem_hoursum.nc"
 
     echo "Renaming variables..."
     cdo chname,RAIN_GSP,accum_rain_lem,RAIN_CON,accum_precip_lem,SNOW_GSP,accum_snow_lem tmp_icon_lem_hoursum.nc tmp_renamed_icon_lem.nc
