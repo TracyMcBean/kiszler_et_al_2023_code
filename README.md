@@ -1,4 +1,4 @@
-# kiszler_et_al_2023_code
+# Code for Kiszler et al. (2023)
 Code for creating the plots in the paper by Kiszler et al. (2023)
 
 # Paper: 
