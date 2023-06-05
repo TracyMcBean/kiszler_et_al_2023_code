@@ -23,9 +23,9 @@ library("ggplot2")
 
 #### MAIN #####----------------------------------------------------------------
 
-ncroot <- "/home/tracy/"
+ncroot <- ""
 
-ncpath <- "sciebo/UzK/nyalesund/data/nyalesund_precip_nwp_lem_pluvio_1h_202008-12_nospinup.nc"
+ncpath <- "data/nyalesund_precip_nwp_lem_pluvio_1h_202008-12_nospinup.nc"
 
 ncfilename <- paste(ncroot, ncpath, sep = "")
 ncfile <- nc_open(ncfilename) 
