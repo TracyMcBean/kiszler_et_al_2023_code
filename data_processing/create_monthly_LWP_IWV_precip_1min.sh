@@ -14,13 +14,16 @@
 #                2021.07.12 TK, Ignore first 3 hours of simulation (So start at 3 UTC to avoid spinup period)
 #                2021.07.19 TK, Combine 2km, 600m and hatpro in single file.
 
-# On cierzo or hegoa
-cd /work/tkiszler/data/
+# On local workstation
+cd /work/
 
 # Data bases:
-ICON_BASEDIR=/data/inscape/icon/experiments/nyalesund/testbed/
-ICON_13km_BASEDIR=/data/mod/icon_op/iglo/site/
-HATPRO_BASEDIR=/data/obs/site/nya/nyhat/l2/
+# model data
+ICON_BASEDIR=/data/
+# model global data
+ICON_13km_BASEDIR=/data/
+# hatpro data
+HATPRO_BASEDIR=/data/
 
 YEAR="2020" #
 MONTH="09"  # 
