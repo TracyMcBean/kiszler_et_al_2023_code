@@ -14,14 +14,19 @@
 #                2021.07.12 TK, Ignore first 3 hours of simulation (So start at 3 UTC to avoid spinup period)
 
 # On cierzo or hegoa
-cd /work/tkiszler/data/
+cd /work/
 
 # Data bases:
-CN_OBS_BASEDIR=/data/hatpro/jue/cloudnet/ny-alesund/products/classification/
-HATPRO_BASEDIR=/data/obs/site/nya/nyhat/l2/
-PARSIVEL_BASEDIR=/data/obs/site/nya/parsivel/l1/
-CL51_BASEDIR=/data/obs/site/nya/cl51/l1/
-ICON_LEM_BASEDIR=/data/inscape/icon/experiments/nyalesund/testbed/
+# cloud net obs data
+CN_OBS_BASEDIR=/data/
+# hatpro data
+HATPRO_BASEDIR=/data/
+# parsivel precip data
+PARSIVEL_BASEDIR=/data/
+# ceilometer data
+CL51_BASEDIR=/data/
+# model data
+ICON_LEM_BASEDIR=/data/
 
 YEAR="2020" #
 MONTH="08"  # 
